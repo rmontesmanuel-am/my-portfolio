@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio and academic profile of Manuel R. Montes, Ph.D.">
+  <title>Manuel R. Montes, Ph.D. | Academic and Translator</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5c667a;
+      --accent: #a44a3f;
+      --accent-dark: #7c332d;
+      --paper: #fffdf9;
+      --line: #e7dfd4;
+      --soft: #f4eee7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    header {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 1.25rem 2rem;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--accent);
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+
+    section {
+      padding: 5rem 2rem;
+    }
+
+    .hero {
+      align-items: center;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1.5fr 1fr;
+      min-height: 70vh;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1.05;
+      margin: 1rem 0 1.5rem;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.25rem;
+      max-width: 42rem;
+    }
+
+    .hero-card {
+      background: var(--soft);
+      border-left: 5px solid var(--accent);
+      padding: 2rem;
+    }
+
+    .hero-card strong {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .button {
+      background: var(--accent);
+      color: #fff;
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--accent-dark);
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 48rem;
+    }
+
+    .tinted {
+      background: var(--soft);
+      max-width: none;
+    }
+
+    .content-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 2.5rem;
+    }
+
+    .entry {
+      border-top: 2px solid var(--accent);
+      padding-top: 1rem;
+    }
+
+    .entry + .entry {
+      margin-top: 1.75rem;
+    }
+
+    .entry h3 {
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    .date,
+    .organization {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    .skills li {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 0.65rem 1rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 2rem;
+    }
+
+    @media (max-width: 700px) {
+      header,
+      .hero {
+        display: block;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .hero-card {
+        margin-top: 2rem;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#home">Manuel R. Montes, Ph.D.</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="home-heading">
+      <div>
+        <p class="eyebrow">AIML Student and Practitioner · Translator · Former Educator · Author </p>
+        <h1 id="home-heading">AIML, language, literature, and meaningful communication.</h1>
+        <p>Welcome to my professional portfolio. I am an AIML Student and Practitioner, former Assistant Professor of Spanish, Creative Writing and
+          Latin American literatures, professional translator and author.
+
+        </p>
+        <a class="button" href="#experience">Explore my work</a>
+      </div>
+      <aside class="hero-card">
+        <strong>Ph.D. in Romance Languages &amp; Literatures</strong>
+        <p>University of Cincinnati, 2016</p>
+        <p>Expanding my knowledge to AIML specialization, with a strong background in Spanish-language teaching and research, literary authorship and professional translation.</p>
+      </aside>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <p class="eyebrow">About me</p>
+      <h2 id="about-heading">A career built around AI development technologies, critical thinking and creative writing</h2>
+      <p class="section-intro">
+        My work connects learning of AI development technologies, literary scholarship, classroom teaching experience and
+practical translation. As scholar, my research focused on Spanish-language
+        narrative, Mexican literature, literary history, and the ways fiction
+        explores identity. As an award winning author, my work explores life changing experiences and perceptual limits of human condition. 
+      </p>
+    </section>
+
+    <section class="tinted" id="experience" aria-labelledby="experience-heading">
+      <div>
+        <p class="eyebrow">Professional experience</p>
+        <h2 id="experience-heading">Selected roles</h2>
+      </div>
+      <div class="content-grid">
+        <div>
+          <article class="entry">
+            <p class="date">2023–Present</p>
+            <h3>Associate Governmental Program Analyst</h3>
+            <p class="organization">Spanish Translation Services · Employment Development Department, State of California</p>
+          </article>
+          <article class="entry">
+            <p class="date">2023–2025</p>
+            <h3>Freelance Translator</h3>
+            <p class="organization">Talking Points</p>
+          </article>
+          <article class="entry">
+            <p class="date">2021</p>
+            <h3>Freelance Translator</h3>
+            <p class="organization">Northwest Ohio Realtors · English-to-Spanish professional translation</p>
+          </article>
+        </div>
+        <div>
+          <article class="entry">
+            <p class="date">2018–2022</p>
+            <h3>Tenure-Track Full-Time Assistant Professor</h3>
+            <p class="organization">Department of World Languages and Cultures, University of Toledo</p>
+          </article>
+          <article class="entry">
+            <p class="date">2017–2018</p>
+            <h3>Visiting Assistant Professor of Spanish</h3>
+            <p class="organization">Department of Spanish and Hispanic Studies, Earlham College</p>
+          </article>
+          <article class="entry">
+            <p class="date">2016–2017</p>
+            <h3>Adjunct Instructor</h3>
+            <p class="organization">Department of Romance Languages &amp; Literatures, University of Cincinnati</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <p class="eyebrow">Education</p>
+      <h2 id="education-heading">Academic background</h2>
+      <div class="content-grid">
+        <article class="entry">
+          <p class="date">2016</p>
+          <h3>Ph.D. in Romance Languages &amp; Literatures</h3>
+          <p class="organization">University of Cincinnati</p>
+          <p>Dissertation on literary identity in the Spanish novel, with a focus on Juan Carlos Onetti, Josefina Vicens, Roberto Bolaño, and Enrique Vila-Matas.</p>
+        </article>
+        <article class="entry">
+          <p class="date">2011</p>
+          <h3>M.A. in Mexican Literature, Cum Laude</h3>
+          <p class="organization">Benemérita Universidad Autónoma de Puebla</p>
+          <p>Research emphasis in Mexican short fiction and literary history.</p>
+        </article>
+        <article class="entry">
+          <p class="date">2005</p>
+          <h3>B.A. in Universal Literature</h3>
+          <p class="organization">Universidad Autónoma de Zacatecas</p>
+          <p>Concentration in Hernán Cortés's <em>Account Letters</em>, pre-Hispanic mythology, and fantasy literature.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tinted" id="awards" aria-labelledby="awards-heading">
+      <p class="eyebrow">Recognition</p>
+      <h2 id="awards-heading">Literary awards</h2>
+
+      <div class="content-grid">
+        <article class="entry">
+          <p class="date">2014</p>
+          <h3>Alfonso Reyes National Prize for Literary Essay</h3>
+          <p class="organization">[CONARTE]</p>
+
+        <article class="entry">
+          <p class="date">2009</p>
+          <h3>Salvador Gallardo Dávalos National Prize for Narrative Fiction</h3>
+          <p class="organization">[CIELA]</p>
+
+        <article class="entry">
+          <p class="date">2008</p>
+          <h3>Outstanding Achievements and Artistic Trajectory Award</h3>
+          <p class="organization">[UAZ]</p>
+          <p>Celebrated for artistic distinction and contribution to Spanish-language literature.</p>
+        </article>
+
+        <article class="entry">
+          <p class="date">2007</p>
+          <h3>Juan Rulfo National Prize for First Novel</h3>
+          <p class="organization">[INBA]</p>
+      </div>
+    </section>
+
+    <section class="tinted" id="skills" aria-labelledby="skills-heading">
+      <p class="eyebrow">Core strengths</p>
+      <h2 id="skills-heading">Skills and areas of expertise</h2>
+      <ul class="skills">
+        <li>AI Development Technologies</li>
+        <li>Data analysis</li>
+        <li>Professional English-Spanish Translation</li>
+        <li>Editing and Proofreading</li>
+        <li>Latin American Literature</li>
+        <li>Literary Criticism</li>
+        <li>Academic Research</li>
+        <li>Spanish Language Instruction</li>
+        <li>Curriculum Development</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Manuel R. Montes, Ph.D.</p>
+  </footer>
+</body>
+</html>
